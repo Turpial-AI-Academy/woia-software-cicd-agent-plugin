@@ -1,0 +1,38 @@
+# Local Docker jobs adapter
+
+Use this adapter only when Docker provides meaningful isolation, services, Linux parity, or release-environment confidence.
+
+## Contract
+
+```text
+ci:fast
+  -> repository-owned fast gate in every environment selected by policy
+
+jobs:local
+  -> Docker/local isolated checks that add distinct evidence
+```
+
+## Rules
+
+- Do not make Docker a universal prerequisite.
+- Do not blindly rerun the full fast gate inside Docker.
+- Re-running `ci:fast` inside Docker is acceptable only when the explicit purpose is portability/parity validation.
+- Keep containers disposable unless the product intentionally owns persistent local data.
+- Pin image/tool versions according to the repository toolchain policy.
+- Store routine output outside tracked files.
+
+## Example patterns
+
+```text
+jobs:local
+├── database integration
+├── Linux-specific smoke
+└── service-to-service contract checks
+```
+
+or, for a portable tooling repository:
+
+```text
+jobs:local
+└── run ci:fast in a clean Linux container to prove cross-platform portability
+```

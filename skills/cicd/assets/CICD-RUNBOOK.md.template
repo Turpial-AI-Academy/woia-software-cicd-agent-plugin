@@ -1,0 +1,87 @@
+# CI/CD Runbook
+
+## Repository profile
+
+- Product type: `<WEB|SERVICE|DESKTOP|CLI|LIBRARY|LOCAL_TOOL|DOCUMENTATION>`
+- Primary platform: `<...>`
+- Runtime/toolchain: `<...>`
+- Package manager: `<...>`
+- Task interface: `<mise|pnpm|bun|make|native script|other>`
+- Delivery target: `<...>`
+- CI execution policy: `<LOCAL|REMOTE|HYBRID>`
+- Policy reason: `<...>`
+
+## Command map
+
+| Logical operation | Repository command |
+|---|---|
+| `bootstrap` | `<...>` |
+| `doctor` | `<...>` |
+| `ci:fast` | `<...>` |
+| `ci:extended` | `<...>` |
+| `release:check` | `<...>` |
+| `jobs:local` | `<optional>` |
+| `release` | `<optional>` |
+| `deploy` | `<optional>` |
+| `smoke` | `<optional>` |
+| `rollback` | `<optional>` |
+
+## Development and integration
+
+Run the repository's `doctor` operation when the environment is in doubt. Follow the selected execution policy for required integration checks; local feedback may be available in every mode.
+
+For bounded changes to a healthy gate map, use affected commands and mandatory invariants. Reuse durable setup/execution evidence only while recorded source/input, runtime, lockfile, service, platform and policy invariants remain unchanged and no drift is observed. Report reusable, invalidated and fresh evidence separately from assumptions; rerun invalidated checks. Deep risk still requires relevant full validation and release acceptance proves the exact candidate/artifact.
+
+## Extended validation
+
+Run `ci:extended` when the change affects higher-risk boundaries. Run `jobs:local` only when Docker/local isolation adds evidence such as services, platform parity, or disposable integration infrastructure.
+
+Repository-specific triggers:
+
+- `<trigger>`
+- `<trigger>`
+
+## Release candidate
+
+```text
+1. identify exact candidate SHA
+2. verify expected working-tree state
+3. execute release:check
+4. build/promote the candidate artifact
+5. smoke
+6. publish/promote if authorized
+```
+
+## Release / deploy
+
+Command or procedure:
+
+```text
+<...>
+```
+
+## Smoke
+
+```text
+<...>
+```
+
+## Rollback
+
+```text
+<...>
+```
+
+## Troubleshooting
+
+1. execute the repository `doctor` operation;
+2. reproduce `ci:fast` locally;
+3. isolate the failing sub-check;
+4. if a selected remote check fails, compare local and remote environments;
+5. distinguish CI failures from deployment-provider failures.
+
+## Legacy aliases
+
+| Legacy command | Canonical meaning |
+|---|---|
+| `<...>` | `<...>` |

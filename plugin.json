@@ -1,0 +1,19 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "woia-software-cicd",
+  "version": "0.5.0",
+  "description": "Portable CI/CD operating standard for auditing, standardizing, troubleshooting, optimizing, and releasing software repositories with fast feedback and proportional testing.",
+  "author": {
+    "name": "Turpial AI Academy",
+    "url": "https://github.com/Turpial-AI-Academy"
+  },
+  "homepage": "https://github.com/Turpial-AI-Academy/woia-software-cicd-agent-plugin",
+  "repository": "https://github.com/Turpial-AI-Academy/woia-software-cicd-agent-plugin",
+  "license": "MIT",
+  "keywords": [
+    "agent-plugin",
+    "woia",
+    "software",
+    "cicd"
+  ]
+}

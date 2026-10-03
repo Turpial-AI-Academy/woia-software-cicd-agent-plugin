@@ -1,0 +1,120 @@
+# CI/CD Audit Report
+
+For a healthy bounded amendment, update only affected sections of the existing report. Create the full report for a new/deep audit. Preserve unaffected valid evidence.
+
+## Scope and evidence lifecycle
+
+- Bounded/deep path and trigger:
+- Affected commands/call graph and mandatory invariants:
+- Reused durable evidence and unchanged recorded inputs:
+- Invalidated evidence and reason:
+- Fresh execution/observation:
+- Assumptions/inferences and remaining uncertainty:
+
+## Repository state
+
+- Repository:
+- Product type:
+- Supported platform(s):
+- Branch:
+- HEAD:
+- Working tree:
+- CI execution policy: `<LOCAL|REMOTE|HYBRID>`
+- Policy reason:
+
+## Toolchain
+
+- Runtime(s):
+- Package manager:
+- Lockfile:
+- Tool manager:
+- Docker/services:
+
+## Current gates
+
+| Gate | Actual work | Measured time | Duplicates | Target role |
+|---|---|---:|---|---|
+
+## Tests
+
+- FAST:
+- INTEGRATION:
+- E2E:
+- RELEASE:
+- Duplications:
+
+## Local execution
+
+- `ci:fast` command:
+- `ci:extended` command:
+- `jobs:local` command:
+- Docker/services:
+- Local evidence path:
+
+## Remote CI / controls (when selected or present)
+
+- Why it exists:
+- Workflows:
+- Triggers:
+- Runner(s):
+- Required checks:
+- Concurrency:
+- Permissions:
+- Cache:
+- Current blockers:
+
+## Release / CD
+
+- Candidate identity:
+- Build/package:
+- Distribution/deployment:
+- Smoke:
+- Rollback:
+
+## Findings
+
+### Keep
+
+1.
+
+### Simplify
+
+1.
+
+### Add
+
+1.
+
+### Remove
+
+1.
+
+## Target contract
+
+```text
+bootstrap:
+doctor:
+ci:fast:
+ci:extended:
+release:check:
+release/deploy:
+smoke:
+rollback:
+```
+
+## Minimal migration plan
+
+1.
+2.
+3.
+
+## Measured baseline
+
+```text
+doctor:
+ci:fast:
+ci:extended:
+release:check:
+```
+
+Use `not measured` instead of guessing.

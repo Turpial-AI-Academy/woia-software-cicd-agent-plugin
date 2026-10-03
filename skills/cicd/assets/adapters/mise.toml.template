@@ -1,0 +1,22 @@
+# TEMPLATE — merge into the repository's real mise.toml.
+# Do not copy tool versions from this file. Keep repository-owned pinned versions.
+
+[tasks.bootstrap]
+description = "Install locked repository dependencies"
+run = "<LOCKED_INSTALL_COMMAND>"
+
+[tasks.doctor]
+description = "Validate the repository development environment"
+run = "<DOCTOR_COMMAND>"
+
+[tasks."ci:fast"]
+description = "Run the fast canonical CI gate"
+run = "<FAST_CI_COMMAND>"
+
+[tasks."ci:extended"]
+description = "Run extended validation when risk justifies it"
+run = "<EXTENDED_CI_COMMAND>"
+
+[tasks."release:check"]
+description = "Validate the exact release candidate"
+run = "<RELEASE_CHECK_COMMAND>"

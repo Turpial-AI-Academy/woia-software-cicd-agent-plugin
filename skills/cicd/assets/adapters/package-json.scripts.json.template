@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "bootstrap": "<locked dependency install or repository bootstrap>",
+    "doctor": "<environment readiness check>",
+    "ci:fast": "<fast canonical validation>",
+    "ci:extended": "<higher-cost validation when justified>",
+    "release:check": "<exact-candidate release validation>"
+  }
+}

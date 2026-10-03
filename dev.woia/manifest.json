@@ -1,0 +1,36 @@
+{
+  "schema": "dev.woia.provider-manifest/v1",
+  "version": "0.5.0",
+  "authoring_profile": "thin",
+  "department": "software",
+  "capability": "cicd",
+  "skill": "cicd",
+  "source_lineage": {
+    "repository": "Turpial-AI-Academy/agile-cicd-agent-plugin",
+    "version": "1.1.1",
+    "commit": "c423c30043e0b98e0dd2a5adb6dbeb3e115666e8"
+  },
+  "migrated_portable_paths": [
+    "skills/cicd/SKILL.md",
+    "skills/cicd/assets/AUDIT-REPORT.md.template",
+    "skills/cicd/assets/CICD-RUNBOOK.md.template",
+    "skills/cicd/assets/adapters/README.md",
+    "skills/cicd/assets/adapters/docker-jobs-local.md.template",
+    "skills/cicd/assets/adapters/mise.toml.template",
+    "skills/cicd/assets/adapters/package-json.scripts.json.template",
+    "skills/cicd/references/ADAPTERS.md",
+    "skills/cicd/references/AUDIT.md",
+    "skills/cicd/references/EXECUTION-POLICY.md",
+    "skills/cicd/references/GIT-FLOW.md",
+    "skills/cicd/references/IMPLEMENTATION.md",
+    "skills/cicd/references/MATURITY.md",
+    "skills/cicd/references/OPTIMIZATION.md",
+    "skills/cicd/references/PROFILES.md",
+    "skills/cicd/references/RELEASE.md",
+    "skills/cicd/references/SECURITY.md",
+    "skills/cicd/references/SOURCES.md",
+    "skills/cicd/references/STANDARD.md",
+    "skills/cicd/references/TESTING.md",
+    "skills/cicd/references/TROUBLESHOOTING.md"
+  ]
+}
