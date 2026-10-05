@@ -2,7 +2,7 @@
 
 WOIA Software provider for the `cicd` capability, migrated preserve-first from `agile-cicd-agent-plugin@1.1.1`.
 
-- Plugin version: `0.5.0`
+- Plugin version: `0.5.1`
 - Primary skill: `$cicd`
 - Authoring profile: thin
 
