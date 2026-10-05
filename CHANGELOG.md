@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+
+- Restore the canonical MIT license text from the original provider lineage.
+
 ## 0.5.0 - 2026-10-03
 
 - Establish WOIA v0.5.0 provider lineage for `cicd`.
