@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased
+## 0.5.1 - 2026-10-04
 
 - Restore the canonical MIT license text from the original provider lineage.
 
