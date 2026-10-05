@@ -4,7 +4,7 @@ description: Audit, select, implement, validate, troubleshoot, optimize, or prep
 license: MIT
 metadata:
   author: Turpial AI Academy
-  version: "0.5.0"
+  version: "0.5.1"
 ---
 
 # CI/CD Operating Skill
