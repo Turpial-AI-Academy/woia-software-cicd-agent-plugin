@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "woia-software-cicd",
-  "version": "0.5.1",
+  "version": "0.5.6",
   "description": "Portable CI/CD operating standard for auditing, standardizing, troubleshooting, optimizing, and releasing software repositories with fast feedback and proportional testing.",
   "author": {
     "name": "Turpial AI Academy",
